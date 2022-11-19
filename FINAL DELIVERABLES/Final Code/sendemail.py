@@ -9,13 +9,13 @@ def sendmail(TEXT,email):
     print("sorry we cant process your candidature")
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("shuaibahmedkhan46@gmail.com", "khan@sendgrid123")
+    s.login("tproduct8080@gmail.com", "khan@sendgrid123")
     message  = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
-    s.sendmail("il.shuaibahmedkhan46@gmail.com", email, message)
+    s.sendmail("il.tproduct8080@gmail.com", email, message)
     s.quit()
 def sendgridmail(user,TEXT):
   
-    from_email = Email("shuaibahmedkhan46@gmail.com") 
+    from_email = Email("tproduct8080@gmail.com") 
     to_email = To(user) 
     subject = "Sending with SendGrid is Fun"
     content = Content("text/plain",TEXT)
