@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expensetracker
+  namespace: default
+  labels:
+    k8s-app: expensetracker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: expensetracker
+  template:
+    metadata:
+      name: expensetracker
+      labels:
+        k8s-app: expensetracker
+    spec:
+       containers:
+         - name: expensetracker
+           mage: expensetracker
+            
