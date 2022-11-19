@@ -4,7 +4,7 @@ from sendgrid.helpers.mail import Mail
 
 message = Mail(
     from_email='shuaibahmedkhan46@gmail.com',
-    to_emails='suhailahmedkhan79@gmail.com',
+    to_emails='jsiva4075@gmail.com',
     subject='Sending with SendGrid is Fun',
     html_content='<strong>and easy to do anywhere, even with Python</strong>')
 try:
